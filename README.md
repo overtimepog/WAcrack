@@ -28,13 +28,13 @@ follow these articles in order to install them
 6). Watch it go!
 
 ## How to use (text simplified)
-1). go into the websites folder
-2). find "WebsiteName.txt"
-3). copy its contents into each of the selectors
-4). watch it go
-(if you would like a website added to the folder ask for it in issues)
-## Disclaimer
+1). go into the websites folder<br>
+2). find "WebsiteName.txt"<br>
+3). copy its contents into each of the selectors<br>
+4). watch it go<br>
+(if you would like a website added to the folder ask for it in issues)<br>
 
+## Disclaimer
 WAcrack is basically a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.
 
 > This project (WAcrack) and it's contributors do not support or take responsibility for any form of unethical acts. This software is purely for educational purposes and is not intended to cause any harm.
