@@ -27,7 +27,7 @@ follow these articles in order to install them
 5). When Asked put in the username to brute force<br>
 6). Watch it go!
 
-## How to use (text 2)
+## Website Folder (text)
 1). go into the websites folder<br>
 2). find "WebsiteName.txt"<br>
 3). copy its contents into each of the selectors<br>
