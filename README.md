@@ -19,7 +19,7 @@ follow these articles in order to install them
 2. heres a article for installing chrome  driver
    https://tecadmin.net/setup-selenium-with-chrome-driver-on-fedora/
 <br>
-## How to use (text 1)
+## How to use (text)
 1). Find a website with a login page<br>
 2). Inspect element to find the Selector of the username form<br>
 3). Do the same for the password field<br>
