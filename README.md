@@ -18,7 +18,7 @@ follow these articles in order to install them
    https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-ubuntu-18-04/#:~:text=%20Installing%20Google%20Chrome%20on%20Ubuntu%23%20%201,on%20the...%203%20Install%20Google%20Chrome%20More%20
 2. heres a article for installing chrome  driver
    https://tecadmin.net/setup-selenium-with-chrome-driver-on-fedora/
-<br>
+
 ## How to use (text)
 1). Find a website with a login page<br>
 2). Inspect element to find the Selector of the username form<br>
@@ -27,7 +27,7 @@ follow these articles in order to install them
 5). When Asked put in the username to brute force<br>
 6). Watch it go!
 
-## Website Folder (text)
+## How to use (text)
 1). go into the websites folder<br>
 2). find "WebsiteName.txt"<br>
 3). copy its contents into each of the selectors<br>
