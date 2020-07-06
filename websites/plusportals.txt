@@ -1,0 +1,7 @@
+https://www.plusportals.com/woodwardacademy
+#UserName
+#Password
+#loginform > div > input
+body > div.container-narrow > section > form > span.field-validation-error
+"any woodward email"
+"wahs.txt wams.txt or wals.txt depending on user"
