@@ -19,7 +19,7 @@ follow these articles in order to install them
 2. heres a article for installing chrome  driver
    https://tecadmin.net/setup-selenium-with-chrome-driver-on-fedora/
 <br>
-## How to use (text)
+## How to use (text 1)
 1). Find a website with a login page<br>
 2). Inspect element to find the Selector of the username form<br>
 3). Do the same for the password field<br>
@@ -27,12 +27,12 @@ follow these articles in order to install them
 5). When Asked put in the username to brute force<br>
 6). Watch it go!
 
-## How to use (text simplified)
+## How to use (text 2)
 1). go into the websites folder<br>
 2). find "WebsiteName.txt"<br>
 3). copy its contents into each of the selectors<br>
 4). watch it go<br>
-(if you would like a website added to the folder ask for it in issues)<br>
+(if you would like a website added to the folder ask for it in issues)
 
 ## Disclaimer
 WAcrack is basically a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.
