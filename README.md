@@ -1,21 +1,9 @@
-# Hatch
-Hatch is a brute force tool that is used to brute force most websites
+# WAcrack
+WAcrack is a brute force tool that is used to brute force most websites
 
-# Update! v.1.3
-added arg support **yay**
-<br>
-  -h, --help            show this help message and exit<br>
-  -u USERNAME, --username=USERNAME Choose the username<br>
-  --usernamesel=USERNAMESEL Choose the username selector<br>
-  --passsel=PASSSEL     Choose the password selector<br>
-  --loginsel=LOGINSEL   Choose the login button selector<br>
-  --passlist=PASSLIST   Enter the password list directory<br>
-  --website=WEBSITE     choose a website<br>
-dont worry if you load up the tool without any args youll go to the default wizard!
-Also i removed the apt xvfb and pip2 pyvirtualdisplay
 ## Installation Instructions
 ```
-git clone https://github.com/MetaChar/Hatch
+git clone https://github.com/0vertime-dev/WAcrack
 python2 main.py
 ```
 
@@ -25,8 +13,11 @@ pip2 install selenium
 pip2 install requests
 ```
 chrome driver and chrome are also required!
-link to chrome driver: http://chromedriver.chromium.org/downloads
-copy it to bin!
+follow these articles in order to install them 
+1. heres a article for installing google chrome 
+   https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-ubuntu-18-04/#:~:text=%20Installing%20Google%20Chrome%20on%20Ubuntu%23%20%201,on%20the...%203%20Install%20Google%20Chrome%20More%20
+2. heres a article for installing chrome  driver
+   https://tecadmin.net/setup-selenium-with-chrome-driver-on-fedora/
 <br>
 ## How to use (text)
 1). Find a website with a login page<br>
@@ -36,6 +27,13 @@ copy it to bin!
 5). When Asked put in the username to brute force<br>
 6). Watch it go!
 
+## Disclaimer
+
+WAcrack is basically a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.
+
+> This project (WAcrack) and it's contributors do not support or take responsibility for any form of unethical acts. This software is purely for educational purposes and is not intended to cause any harm.
+
 ## How to use (Video)
+## I did not make this video
 [![IMAGE ALT TEXT](https://i.ytimg.com/vi/Hd_kQVnajxk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLC7N67-Q67WAxMViUrHWJDdnkSM9A)](https://youtu.be/Hd_kQVnajxk "Video Title")
 
