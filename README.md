@@ -14,9 +14,9 @@ pip2 install requests
 ```
 chrome driver and chrome are also required!
 follow these articles in order to install them
-1. heres a article for installing google chrome
+1. here's a article for installing google chrome
    https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-ubuntu-18-04/#:~:text=%20Installing%20Google%20Chrome%20on%20Ubuntu%23%20%201,on%20the...%203%20Install%20Google%20Chrome%20More%20
-2. heres a article for installing chrome  driver
+2. here's a article for installing chrome  driver
    https://tecadmin.net/setup-selenium-with-chrome-driver-on-fedora/
 
 ## How to use (text)
